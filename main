@@ -2,8 +2,8 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/leduymanh678/SCRIPT-
 
        local Window = MakeWindow({
          Hub = {
-         Title = "MANHLEGENS",
-         Animation = "2001"
+         Title = "Manhlegens",
+         Animation = "Le Duy Manh"
          },
         Key = {
         KeySystem = false,
