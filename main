@@ -1,8 +1,8 @@
-loadstring(game:HttpGet(("")))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/leduymanh678/SCRIPT-BY-MANHLEGENS/refs/heads/main/ui?token=GHSAT0AAAAAADLVLM5F242NKM6IDTW5YBW42GRI2BQ")))()
 
        local Window = MakeWindow({
          Hub = {
-         Title = "DANH VINH",
+         Title = "MANHLEGENS",
          Animation = "2001"
          },
         Key = {
