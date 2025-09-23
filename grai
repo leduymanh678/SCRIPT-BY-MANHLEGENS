@@ -58,8 +58,8 @@ msg.TextTransparency = 1
 -- Chữ fade in
 TweenService:Create(msg, TweenInfo.new(1.2), {TextTransparency=0}):Play()
 
--- Giữ intro 2s
-task.wait(2)
+-- Giữ intro 1s
+task.wait(1)
 
 -- Fade out tất cả
 TweenService:Create(logo, TweenInfo.new(1.2), {ImageTransparency=1}):Play()
@@ -98,8 +98,8 @@ repeat task.wait() until game:IsLoaded()
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title="Grai2",
-    SubTitle="Tổng Hợp Script",
+    Title="Manhlegens",
+    SubTitle="Script",
     TabWidth=157,
     Size=UDim2.fromOffset(450,300),
     Acrylic=true,
@@ -128,13 +128,7 @@ Tabs.Main0:AddButton({
 Tabs.Main1:AddButton({
     Title="Redz Hub",
     Callback=function()
-        loadstring(game:HttpGet("https://pastefy.app/XMcjaaIS/raw"))()
-    end
-})
-Tabs.Main1:AddButton({
-    Title="w-azure Hub",
-    Callback=function()
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/85e904ae1ff30824c1aa007fc7324f8f.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/leduymanh678/SCRIPT-BY-MANHLEGENS/refs/heads/main/redz?token=GHSAT0AAAAAADLVLM5ES2Y57MN53BEEFFB42GSTB7A"))()
     end
 })
 Tabs.Main1:AddButton({
@@ -144,39 +138,15 @@ Tabs.Main1:AddButton({
     end
 })
 Tabs.Main1:AddButton({
-    Title="Min Hub",
-    Callback=function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinXt2Eng"))()
-    end
-})
-Tabs.Main1:AddButton({
-    Title="Speed Hub X",
-    Callback=function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
-    end
-})
-Tabs.Main1:AddButton({
-    Title="Than Hub",
-    Callback=function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/thantzy/thanhub/refs/heads/main/thanv1"))()
-    end
-})
-Tabs.Main1:AddButton({
     Title="BlueX HUb",
     Callback=function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
     end
 })
 Tabs.Main1:AddButton({
-    Title="Tsoul Hub",
+    Title="Tsuo Hub",
     Callback=function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
-    end
-})
-Tabs.Main1:AddButton({
-    Title="Volcano Hub V3",
-    Callback=function()
-        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/indexeduu/BF-NewVer/refs/heads/main/V3New.lua"))()
     end
 })
 Tabs.Main1:AddButton({
@@ -198,19 +168,6 @@ Tabs.Main2:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
     end
 })
-Tabs.Main2:AddButton({
-    Title="No Lag Hub",
-    Callback=function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/NoLag-id/No-Lag-HUB/refs/heads/main/Loader/Main.lua"))()
-    end
-})
-Tabs.Main2:AddButton({
-    Title="BlueX Hub",
-    Callback=function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
-    end
-})
-
 -- Tab 3: 99 Nights In The Forest
 Tabs.Main3:AddButton({
     Title="Voidware Hub",
@@ -222,11 +179,5 @@ Tabs.Main3:AddButton({
     Title="Speed Hub X",
     Callback=function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
-    end
-})
-Tabs.Main3:AddButton({
-    Title="Pulse HUb",
-    Callback=function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/Chavels123/Loader/refs/heads/main/loader.lua"))()
     end
 })
