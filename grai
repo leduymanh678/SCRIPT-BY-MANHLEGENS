@@ -23,7 +23,7 @@ logo.AnchorPoint = Vector2.new(0.5,0.5)
 logo.Position = UDim2.new(0.5,0,0.5,0)
 logo.Size = UDim2.new(0,0,0,0) -- bắt đầu nhỏ rồi zoom
 logo.BackgroundTransparency = 1
-logo.Image = "http://www.roblox.com/asset/?id=77111304194141"
+logo.Image = "http://www.roblox.com/asset/?id=134366150570795"
 logo.ImageTransparency = 1
 
 -- Hiện logo (zoom + fade in)
@@ -47,7 +47,7 @@ msg.AnchorPoint = Vector2.new(0.5,0)
 msg.Position = UDim2.new(0.5,0,0.75,0)
 msg.Size = UDim2.new(0,600,0,80)
 msg.BackgroundTransparency = 1
-msg.Text = "Grai Hub"
+msg.Text = "Manhlegens Hub"
 msg.TextColor3 = Color3.fromRGB(0,255,255)
 msg.Font = Enum.Font.GothamBlack
 msg.TextScaled = true
@@ -58,8 +58,8 @@ msg.TextTransparency = 1
 -- Chữ fade in
 TweenService:Create(msg, TweenInfo.new(1.2), {TextTransparency=0}):Play()
 
--- Giữ intro 4s
-task.wait(4)
+-- Giữ intro 2s
+task.wait(2)
 
 -- Fade out tất cả
 TweenService:Create(logo, TweenInfo.new(1.2), {ImageTransparency=1}):Play()
@@ -82,7 +82,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.1,0,0.15,0)
 ImageButton.Size = UDim2.new(0,40,0,40)
 ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id=77111304194141"
+ImageButton.Image = "http://www.roblox.com/asset/?id=134366150570795"
 
 local UICorner = Instance.new("UICorner")
 UICorner.Parent = ImageButton
@@ -117,10 +117,10 @@ local Tabs = {
 
 -- Tab 0: Thông Tin
 Tabs.Main0:AddButton({
-    Title="Youtuber",
-    Description="Grai2",
+    Title="Manhlegens",
+    Description="Manh",
     Callback=function()
-        setclipboard("https://youtube.com/@grai2")
+        setclipboard("https://www.roblox.com/users/3914064857/profile")
     end
 })
 
@@ -128,8 +128,7 @@ Tabs.Main0:AddButton({
 Tabs.Main1:AddButton({
     Title="Redz Hub",
     Callback=function()
-        local Settings={JoinTeam="Pirates",Translator=true}
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
+        loadstring(game:HttpGet("https://pastefy.app/XMcjaaIS/raw"))()
     end
 })
 Tabs.Main1:AddButton({
