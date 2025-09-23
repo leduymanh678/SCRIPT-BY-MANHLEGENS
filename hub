@@ -111,7 +111,7 @@ local Window = Fluent:CreateWindow({
 local Tabs = {
     Main0=Window:AddTab({Title="Thông Tin"}),
     Main1=Window:AddTab({Title="Blox Fruits"}),
-    Main2=Window:AddTab({Title="Grow A Garden"}),
+    Main2=Window:AddTab({Title="Door"}),
     Main3=Window:AddTab({Title="99 Nights In The Forest"})
 }
 
