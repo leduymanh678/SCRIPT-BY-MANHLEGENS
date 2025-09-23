@@ -21,7 +21,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/leduymanh678/SCRIPT-
   })
 
        MinimizeButton({
-       Image = "http://www.roblox.com/asset/?id=128933802535491",
+       Image = "http://www.roblox.com/asset/?id=134366150570795",
        Size = {60, 60},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
