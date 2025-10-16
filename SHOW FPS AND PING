@@ -1,0 +1,82 @@
+-- FPS + Ping display (fixes + more robust)
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+
+local plr = Players.LocalPlayer
+-- đảm bảo LocalPlayer và PlayerGui đã sẵn sàng
+if not plr then
+    plr = Players.PlayerAdded:Wait()
+end
+local playerGui = plr:WaitForChild("PlayerGui")
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "FPSPingGui"
+gui.IgnoreGuiInset = true
+gui.ResetOnSpawn = false
+gui.Parent = playerGui
+
+local l = Instance.new("TextLabel")
+l.Name = "MainLabel"
+l.Parent = gui
+l.Size = UDim2.new(0, 200, 0, 30)
+l.Position = UDim2.new(0.5, -100, 0, 0)
+l.BackgroundTransparency = 1
+l.TextScaled = true
+l.Font = Enum.Font.SourceSansBold
+l.ZIndex = 10
+l.Text = "FPS: -- | Ping: -- ms"
+
+-- tạo outline (8 hướng)
+local outlines = {}
+local offsets = {
+    Vector2.new(-1, 0), Vector2.new(1, 0), Vector2.new(0, -1), Vector2.new(0, 1),
+    Vector2.new(-1, -1), Vector2.new(-1, 1), Vector2.new(1, -1), Vector2.new(1, 1)
+}
+for _, v in ipairs(offsets) do
+    local x = l:Clone()
+    x.Parent = gui
+    -- dịch chuyển 1 pixel theo offset
+    x.Position = l.Position + UDim2.new(0, v.X, 0, v.Y)
+    x.TextColor3 = Color3.new(0, 0, 0) -- viền đen
+    x.ZIndex = 9
+    table.insert(outlines, x)
+end
+
+-- biến cho FPS
+local lastTime = tick()
+local frameCount = 0
+
+RunService.RenderStepped:Connect(function()
+    -- tăng bộ đếm khung
+    frameCount = frameCount + 1
+
+    -- cập nhật mỗi 1 giây
+    local now = tick()
+    if now - lastTime >= 1 then
+        local fps = math.floor(frameCount / (now - lastTime) + 0.5)
+        frameCount = 0
+        lastTime = now
+
+        -- lấy ping một cách an toàn (pcall tránh lỗi khi không có)
+        local ping = 0
+        local ok, val = pcall(function()
+            return game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue()
+        end)
+        if ok and type(val) == "number" then
+            ping = math.floor(val + 0.5)
+        end
+
+        local txt = ("FPS: %d | Ping: %d ms"):format(fps, ping)
+        l.Text = txt
+        for _, o in ipairs(outlines) do
+            o.Text = txt
+        end
+    end
+
+    -- màu cầu vồng mượt
+    local s = tick() * 2
+    local r = math.sin(s) * 0.5 + 0.5
+    local g = math.sin(s + 2) * 0.5 + 0.5
+    local b = math.sin(s + 4) * 0.5 + 0.5
+    l.TextColor3 = Color3.new(r, g, b)
+end)
