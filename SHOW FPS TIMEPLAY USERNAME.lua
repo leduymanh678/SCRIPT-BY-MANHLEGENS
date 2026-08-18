@@ -40,7 +40,7 @@ local BORDER_WHITE_THICKNESS = 1.6
 
 -- RGB beam ngắn chạy qua viền: đi -> nghỉ -> về -> nghỉ.
 local BORDER_BEAM_ENABLED = true
-local BORDER_BEAM_THICKNESS = 2.2
+local BORDER_BEAM_THICKNESS = 2.5
 local BORDER_SWEEP_TIME = 1.0
 local BORDER_PAUSE_TIME = 1.0
 local BORDER_BEAM_START_OFFSET = -0.85
