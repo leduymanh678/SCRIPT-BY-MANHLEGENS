@@ -16,7 +16,7 @@ repeat task.wait() until game:IsLoaded()
 -- ============================================================
 local GUI_NAME = "FPS_Username_Display"
 
-local BACKGROUND_IMAGE = "https://cdn.discordapp.com/attachments/1413006808959815720/1539162310013358081/image.png?ex=6a85501a&is=6a83fe9a&hm=784c15a458efdc30586f05240d87415104442e20e3757986c2111ef921516ec6&"
+local BACKGROUND_IMAGE = "https://cdn.discordapp.com/attachments/1413006808959815720/1539162634694295552/image.png?ex=6a855068&is=6a83fee8&hm=feb6524dfdf47312886dda9792f224879288715091f6fcc0d65dc9c78f7adc66&"
 
 -- Độ đậm của ảnh nền: 0 = trong suốt, 1 = rõ hoàn toàn.
 local BACKGROUND_OPACITY = 0.8
