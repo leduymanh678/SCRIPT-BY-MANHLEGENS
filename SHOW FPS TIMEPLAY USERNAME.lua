@@ -19,7 +19,7 @@ local GUI_NAME = "FPS_Username_Display"
 local BACKGROUND_IMAGE = "https://cdn.discordapp.com/attachments/1410631576718676011/1527605586387144794/7a55130c51f61c865a364e7f0599f402.png?ex=6a84cc51&is=6a837ad1&hm=514a22ffbe18d70511cf5e1c28fdbad3680545bb9180dcd67e52d989dcd1ec17&"
 
 -- Độ đậm của ảnh nền: 0 = trong suốt, 1 = rõ hoàn toàn.
-local BACKGROUND_OPACITY = 0.7
+local BACKGROUND_OPACITY = 0.8
 
 -- Kích thước pill.
 local BAR_HEIGHT = 28
