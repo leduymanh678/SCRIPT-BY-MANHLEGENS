@@ -1,0 +1,15 @@
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+getgenv().Key = "ebbfe0f62a1c1b7018a8ad42"
+getgenv().__BANANA_SCRIPT_ROUTE = "kaigod"
+Config = {
+    Team = "Pirates",
+    HopWhenIdle = true,
+    FpsBoost = true,
+    FpsCap = 20,
+    BlockAcc = true,
+    BlackScreen = false,
+    CursedDualKatana = true,
+    SoulGuitar = true,
+    FarmBoneForx2EXP = true
+}
+return loadstring(game:HttpGet("https://banana-hub.xyz/loader/banana.lua"))()
