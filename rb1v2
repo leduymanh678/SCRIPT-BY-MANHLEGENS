@@ -1,0 +1,4 @@
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+getgenv().Key = "ebbfe0f62a1c1b7018a8ad42" 
+getgenv().__BANANA_SCRIPT_ROUTE = "bf_main"
+return loadstring(game:HttpGet("https://banana-hub.xyz/loader/banana.lua"))() 
