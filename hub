@@ -126,9 +126,15 @@ Tabs.Main0:AddButton({
 
 -- Tab 1: Blox Fruits
 Tabs.Main1:AddButton({
-    Title="Redz Hub",
+    Title="BananaMain",
     Callback=function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/leduymanh678/SCRIPT-BY-MANHLEGENS/refs/heads/main/redz?token=GHSAT0AAAAAADLVLM5ES2Y57MN53BEEFFB42GSTB7A"))()
+        https://raw.githubusercontent.com/leduymanh678/SCRIPT-BY-MANHLEGENS/refs/heads/main/rb1v2
+    end
+})
+Tabs.Main1:AddButton({
+    Title="BananaKaitun",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
     end
 })
 Tabs.Main1:AddButton({
