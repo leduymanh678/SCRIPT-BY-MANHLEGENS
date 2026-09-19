@@ -128,13 +128,13 @@ Tabs.Main0:AddButton({
 Tabs.Main1:AddButton({
     Title="BananaMain",
     Callback=function()
-        https://raw.githubusercontent.com/leduymanh678/SCRIPT-BY-MANHLEGENS/refs/heads/main/rb1v2
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/leduymanh678/SCRIPT-BY-MANHLEGENS/refs/heads/main/rb1v2"))()
     end
 })
 Tabs.Main1:AddButton({
     Title="BananaKaitun",
     Callback=function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/leduymanh678/SCRIPT-BY-MANHLEGENS/refs/heads/main/rb1v3"))()
     end
 })
 Tabs.Main1:AddButton({
